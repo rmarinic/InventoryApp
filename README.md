@@ -17,19 +17,22 @@ MySQL: MySQL is a widely used open-source relational database management system.
 Project Structure
 The project is organized into three main directories:
 
-frontend/: Contains the Angular project files.
-backend/: Contains the .NET project files.
-database/: Contains SQL scripts for database schema and seed data.
-Frontend Structure (frontend/)
+-frontend/: Contains the Angular project files.
+-backend/: Contains the .NET project files.
+-database/: Contains SQL scripts for database schema and seed data.
+
+x Frontend Structure (frontend/)
 Angular Components: Modular and reusable UI components.
 Services: Handle data fetching and business logic for the frontend.
 Routing: Configures client-side routing for navigation.
 Styles: CSS stylesheets for UI design.
-Backend Structure (backend/)
+
+x Backend Structure (backend/)
 Controllers: Handle incoming HTTP requests and return responses.
 Models: Define the data structures and entities.
 Services: Implement the business logic and interact with the database.
 Configuration: Settings for database connections, CORS, and middleware.
-Database Structure (database/)
+
+x Database Structure (database/)
 Schema.sql: SQL script for creating database tables.
 Seed.sql: SQL script for populating the database with initial data.
