@@ -1,0 +1,7 @@
+bin/
+obj/
+*.log
+*.user
+*.suo
+*.swp
+.vscode/
