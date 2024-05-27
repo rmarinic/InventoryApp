@@ -1,0 +1,21 @@
+<br>
+<div class="row">
+    <div class="col-12">
+        <button class="btn btn-sm btn-success" routerLink="/new-sale">New Sale</button>
+    </div>
+</div><hr>
+
+<div class="row">
+    <div class="col-3" *ngFor="let sale of saleList">
+        <div class="card">
+            <div class="card-body">
+                <h4 class="card-title">{{ sale.productName }}</h4>
+                <p class="card-text">Customer: {{sale.customerName}}</p>
+                <p class="card-text">Sale date: {{ sale.saleDate | date: 'dd/MM/yy'}}</p>
+                <p class="card-text">Amount: {{ sale.quantity }}</p>
+                <p class="card-text">Price: {{ sale.totalAmount }}</p>
+            </div>
+        </div>
+    </div>
+</div>
+<router-outlet></router-outlet>

@@ -1,0 +1,21 @@
+<br>
+<div class="row">
+    <div class="col-12">
+        <button class="btn btn-sm btn-success" routerLink="/new-purchase">New Purchase</button>
+    </div>
+</div><hr>
+
+<div class="row">
+    <div class="col-3" *ngFor="let purchase of purchaseList">
+        <div class="card">
+            <div class="card-body">
+                <h4 class="card-title">{{ purchase.productName }}</h4>
+                <p class="card-text">Supplier: {{purchase.supplierName}}</p>
+                <p class="card-text">Purchase date: {{ purchase.purchaseDate | date: 'dd/MM/yy'}}</p>
+                <p class="card-text">Amount: {{ purchase.quantity }}</p>
+                <p class="card-text">Price: {{ purchase.invoiceAmount }}</p>
+            </div>
+        </div>
+    </div>
+</div>
+<router-outlet></router-outlet>
